@@ -1,0 +1,19 @@
+# github.com/gorilla/context v1.1.2
+## explicit; go 1.20
+github.com/gorilla/context
+# github.com/gorilla/mux v1.3.1-0.20170228224354-599cba5e7b61
+## explicit
+github.com/gorilla/mux
+# github.com/gorilla/websocket v1.2.1-0.20180306181548-eb925808374e
+## explicit
+github.com/gorilla/websocket
+# github.com/lib/pq v0.0.0-20180327071824-d34b9ff171c2
+## explicit
+github.com/lib/pq
+github.com/lib/pq/oid
+# github.com/rs/cors v1.3.1-0.20180322220005-ff3499d70f67
+## explicit
+github.com/rs/cors
+# github.com/urfave/negroni v0.2.1-0.20170226005333-c0db5feaa338
+## explicit
+github.com/urfave/negroni
