@@ -24,11 +24,15 @@ func determineListenAddress() (string, error) {
 }
 
 func connectDatabase() {
-	url := os.Getenv("DATABASE_URL")
+	host := os.Getenv("DATABASE_HOST")
+	port := os.Getenv("DATABASE_PORT")
+	user := os.Getenv("DATABASE_USER")
+	password := os.Getenv("DATABASE_PASSWORD")
+	dbname := os.Getenv("DATABASE_DB_NAME")
 
-	if url == "" {
-		url = "user=postgres dbname=postgres sslmode=disable"
-	}
+	url := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
+
+	fmt.Println(url)
 
 	db, err := models.Connect(url)
 
